@@ -1,0 +1,20 @@
+﻿@using Contentful.Core.Models
+@model ContentfulCollection<MoboFeaturesContentful>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Product Details</h1>
+@foreach(var record in Model){
+    <h2><i><span style="color:green">Title</span></i>: @record.Title</h2>
+    <h2><i><span style="color:green">Introduction</span></i>: @record.Introduction</h2>
+    <h2><i><span style="color:green">Paragraphs</span></i>: @record.Paragraphs</h2>
+    <h2><i><span style="color:green">Slug</span></i>: @record.Slug</h2>
+
+ <br /><br />  
+}
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
